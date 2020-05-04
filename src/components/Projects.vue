@@ -109,7 +109,7 @@ export default {
           description: 'A personal website built with:',
           technologies: ['HTML5', 'Javascript', 'Materialize CSS'],
           photo: 'personal_site_screenshot.jpg',
-          url: 'https://shabnam-k.me/materialize-project/index.html/',
+          url: 'https://shabnam-k.me/materialize-project/index.html',
           github: 'https://github.com/shab-k/myportfolio/tree/master/dist/materialize-project'
         }
       ]
