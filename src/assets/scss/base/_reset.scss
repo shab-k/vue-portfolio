@@ -1,0 +1,29 @@
+html {
+  font-size: 100%; /*16px*/
+  // font: normal 100% /$base__line-height $text-font-stack;
+  box-sizing: border-box;
+  background-color: $light-grey;
+}
+
+*,
+*::before,
+*::after {
+  // box-sizing: inherit;
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+

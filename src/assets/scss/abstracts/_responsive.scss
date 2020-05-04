@@ -1,0 +1,54 @@
+html {
+  @include font-size($html-font-sizes);
+}
+
+@include media-max-xl {
+  .container {
+    width: 85%;
+  }
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include media-max-lg {
+  .container {
+    width: 85%;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    width: 85%;
+  }
+}
+
+@include media-max-md {
+  .contact__content {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    width: 90%;
+  }
+  .card-container {
+    width: 90%;
+  }
+}
+
+@include media-max-sm {
+  .container {
+    width: 100%;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .card {
+    margin: 10px 0;
+    grid-template-rows: 140px auto 70px;
+  }
+  .card-title {
+    margin-top: 0;
+  }
+  .card-text {
+    margin-top: 0;
+  }
+}

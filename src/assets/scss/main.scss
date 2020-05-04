@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+// Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+// Base stuff
+@import
+  'base/reset',
+  'base/fonts',
+  'base/typography';
+
+// Layout-related sections
+@import
+  'layouts/navigation',
+  'layouts/footer';
+  
+// Components
+@import
+  'components/about',
+  'components/skills',
+  'components/projects',
+  'components/contact';
+
+// Pages
+@import
+  'pages/home';
+  
+// Media Queries
+@import 'abstracts/responsive'; //The order is important!!!';
+
+
+
