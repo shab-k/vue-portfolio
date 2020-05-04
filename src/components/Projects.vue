@@ -46,8 +46,8 @@ export default {
           description: 'I rebuilt & redesigned my portfolio website using:',
           technologies: ['Vue', 'BEM', 'Sass', 'Flex', 'Netlify', 'CSS Grids'],
           photo: 'portfolio-screenshot.jpg',
-          url: '#',
-          github: '#'
+          url: 'https://adoring-northcutt-103687.netlify.app',
+          github: 'https://github.com/shab-k/vue-portfolio'
         },
         {
           id: '7',
