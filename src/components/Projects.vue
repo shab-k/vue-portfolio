@@ -2,35 +2,48 @@
   <section id="projects">
     <div class="container">
       <div class="content-bg">
-           <h1 class="text-center">Projects</h1>
-           <div class="card-container">
-              <div class="card" v-for="project in projects" :key="project.id">
-              <div class="grid-area card-image">
-                   <img :src="require('../assets/images/' + project.photo)" />
-              </div>
-              <div class="grid-area card-body">
-                <h6 class="card-title text-center">{{ project.title }}</h6>
-                <p class="card-text micro semi-bold">{{ project.description }}</p>
-                <ul class="stack micro">
-                    <li v-for="(tech, index) in project.technologies" :key="index">
-                      - <span class="chip">{{ tech }}</span>
-                    </li>
-                </ul>
-                <br />
-                <br />
-              </div>
-              <div class="grid-area card-action" v-if="project.id == 7 ">
-                    <a type="button" class="disabled button-link" data-toggle="tooltip" data-placement="bottom" title="shab.k.web [at] gmail">DB Files</a>
-                    <a :href="project.github" class="button-link" target="_blank">Github</a>
-              </div>
-              <div v-else class="grid-area card-action">
-                    <a :href="project.url" class="button-link" target="_blank">Live</a>
-                    <a :href="project.github" class="button-link" target="_blank">Github</a>
-              </div>
+        <h1 class="text-center">Projects</h1>
+        <div class="card-container">
+          <div class="card" v-for="project in projects" :key="project.id">
+            <div class="grid-area card-image">
+              <img :src="require('../assets/images/' + project.photo)" />
             </div>
-           </div>
+            <div class="grid-area card-body">
+              <h6 class="card-title text-center">{{ project.title }}</h6>
+              <p class="card-text micro semi-bold">{{ project.description }}</p>
+              <ul class="stack micro">
+                <li v-for="(tech, index) in project.technologies" :key="index">
+                  - <span class="chip">{{ tech }}</span>
+                </li>
+              </ul>
+              <br />
+              <br />
+            </div>
+            <div class="grid-area card-action" v-if="project.id == 7">
+              <a
+                type="button"
+                class="disabled button-link"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="shab.k.web [at] gmail"
+                >DB Files</a
+              >
+              <a :href="project.github" class="button-link" target="_blank"
+                >Github</a
+              >
+            </div>
+            <div v-else class="grid-area card-action">
+              <a :href="project.url" class="button-link" target="_blank"
+                >Live</a
+              >
+              <a :href="project.github" class="button-link" target="_blank"
+                >Github</a
+              >
+            </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -40,6 +53,15 @@ export default {
   data () {
     return {
       projects: [
+        {
+          id: '9',
+          title: 'Wexperts React',
+          description: 'A react project with full CRUD functionality',
+          technologies: ['React', 'Redux', 'Styled components', 'Firebase'],
+          photo: 'wexperts-react-fb-shot.jpg',
+          url: 'https://wexperts-react.web.app/',
+          github: 'https://github.com/shab-k/wexperts-react-fb'
+        },
         {
           id: '8',
           title: 'Vue Portfolio',
@@ -61,7 +83,8 @@ export default {
         {
           id: '6',
           title: 'Wexperts',
-          description: 'A landing page which is partially accessible, built with:',
+          description:
+            'A landing page which is partially accessible, built with:',
           technologies: ['HTML5', 'Sass(+Flexbox + BEM + OOCSS)', 'Netlify'],
           photo: 'wexperts_screenshot.jpg',
           url: 'https://blissful-clarke-d16757.netlify.com/',
@@ -71,7 +94,14 @@ export default {
           id: '5',
           title: 'Bibliophile',
           description: 'A React app built with:',
-          technologies: ['React', 'Redux', 'Materialize CSS', 'Moment.js', 'NYTimes Book API', 'Firebase(Hosting+DB)'],
+          technologies: [
+            'React',
+            'Redux',
+            'Materialize CSS',
+            'Moment.js',
+            'NYTimes Book API',
+            'Firebase(Hosting+DB)'
+          ],
           photo: 'bibliophile-screenshot.jpg',
           url: 'https://bibliophile-8ffc8.firebaseapp.com/',
           github: 'https://github.com/shab-k/bibliophile'
@@ -110,7 +140,8 @@ export default {
           technologies: ['HTML5', 'Javascript', 'Materialize CSS'],
           photo: 'personal_site_screenshot.jpg',
           url: 'https://shabnam-k.me/materialize-project/index.html',
-          github: 'https://github.com/shab-k/myportfolio/tree/master/dist/materialize-project'
+          github:
+            'https://github.com/shab-k/myportfolio/tree/master/dist/materialize-project'
         }
       ]
     }

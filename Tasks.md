@@ -1,8 +1,6 @@
 Todo:
 ======
 - updating sass modular system
-- github
-- build & deploy
 - add to portfolio
 - git
 
@@ -52,3 +50,5 @@ May 04 2020
 - changing color & .. to sass vars
 - cleaning
 - check the content & links
+- github
+- build & deploy
